@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form">
+      <div class="form_page page1 active-page">
+        <div class="title">
+          <h1>Login Page</h1>
+        </div>
+        <div class="input_area">
+          <div class="input_box" id="username">
+            <label for="username">username</label>
+            <input type="text" id="username" name="username" />
+            <p class="error">Error</p>
+          </div>
+          <div class="input_box" id="email">
+            <label for="email">email</label>
+            <input type="text" id="email" name="email" />
+            <p class="error">Error</p>
+
+          </div>
+          <div class="input_box" id="password">
+            <label for="password">password</label>
+            <input type="text" id="password" name="password" />
+            <p class="error">Error</p>
+          </div>
+          <div class="input_box" id="detail">
+            <a href="#">Forget password</a>
+            <a href="#">Create new account</a>
+            <button onclick="handlePageSlide()">Login</button>
+          </div>
+        </div>
+      </div>
+      <div class="form_page page2">
+        <div class="title">
+          <h1>Verification</h1>
+      </div>
+      <div class="input_area">
+        <div class="input_box" id="verification">
+          <label for="verification">verification Code</label>
+          <input type="text" id="verification" name="verification" />
+          <button>Verify</button>
+          <p class="error">Error</p>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
